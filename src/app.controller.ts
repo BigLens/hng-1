@@ -14,6 +14,13 @@ export class AppController {
         error: true,
       });
     }
+
+    if (!Number.isInteger(num)) {
+      throw new BadRequestException({
+        number: 'float',
+        error: true,
+      });
+    }
     return this.appService.numClassify(num);
   }
 }
