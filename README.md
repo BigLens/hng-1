@@ -43,4 +43,4 @@ Response (400 Bad Request)
 
 
 Deployment
-The project is deployed and accessible at 'https://hng-1-6e3s.onrender.com/api/classify-number'
+The project is deployed and accessible at 'https://hng-1-6o5c.onrender.com/api/classify-number'
