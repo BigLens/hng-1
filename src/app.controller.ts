@@ -8,6 +8,14 @@ export class AppController {
   @Get('classify-number')
   async getNumberApi(@Query('number') number: string ){
     const num = Number(number);
+
+    if (!number) {
+      throw new BadRequestException({
+        number: 'missing',
+        error: true,
+      });
+    }
+    
     if(isNaN(num)){
       throw new BadRequestException({
         number: "alphabet",
