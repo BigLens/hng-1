@@ -11,7 +11,7 @@ export class AppController {
 
     if (!number) {
       throw new BadRequestException({
-        number: 'missing',
+        number: 'No number. Input a number!',
         error: true,
       });
     }
